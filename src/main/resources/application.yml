@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: yte-spring
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yte_spring
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
