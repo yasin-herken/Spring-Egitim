@@ -1,6 +1,5 @@
 server:
-  port: 8080
-
+  port: 8181
 
 spring:
   application:
@@ -10,3 +9,7 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
