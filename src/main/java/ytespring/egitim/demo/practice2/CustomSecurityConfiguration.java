@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice1;
+package ytespring.egitim.demo.practice2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,9 +13,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 public class CustomSecurityConfiguration {
 
-    public CustomSecurityConfiguration(final AuthenticationManagerBuilder authenticationManagerBuilder, CustomUserDetailsService customUserDetailsService) throws Exception {
+    public CustomSecurityConfiguration(final AuthenticationManagerBuilder authenticationManagerBuilder, UserDetailsServiceImpl userDetailsServiceImpl) throws Exception {
         authenticationManagerBuilder.
-                userDetailsService(customUserDetailsService)
+                userDetailsService(userDetailsServiceImpl)
                 .passwordEncoder(NoOpPasswordEncoder.getInstance());
     }
 

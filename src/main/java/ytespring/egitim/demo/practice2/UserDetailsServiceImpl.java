@@ -1,16 +1,20 @@
-package ytespring.egitim.demo.practice1;
+package ytespring.egitim.demo.practice2;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import java.util.Set;
+import ytespring.egitim.demo.practice2.repository.UserRepository;
 
 @Service
-public class CustomUserDetailsService implements UserDetailsService {
+@RequiredArgsConstructor
+public class UserDetailsServiceImpl implements UserDetailsService {
+
+    private final UserRepository userRepository;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new CustomUser(username, username, Set.of());
+        return userRepository.findByUsername(username);
     }
 }

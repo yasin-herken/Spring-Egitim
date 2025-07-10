@@ -1,3 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yte_spring
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+
 logging:
   level:
     org.springframework.security: trace

@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice1;
+package ytespring.egitim.demo.practice2;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;
