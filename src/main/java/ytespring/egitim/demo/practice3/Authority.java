@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice2;
+package ytespring.egitim.demo.practice3;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -26,8 +26,7 @@ public class Authority implements GrantedAuthority {
 
     private String authority;
 
-    public Authority(Long id, String authority) {
-        this.id = id;
+    public Authority(String authority) {
         this.authority = authority;
     }
 }

@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice2;
+package ytespring.egitim.demo.practice3;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -30,7 +30,7 @@ public class Users implements UserDetails {
     private boolean isCredentialsNonExpired;
     private boolean isEnabled;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE})
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST})
     @JoinTable(
             name = "USER_AUTHORITIES",
             joinColumns = @JoinColumn(name = "USER_ID"),
