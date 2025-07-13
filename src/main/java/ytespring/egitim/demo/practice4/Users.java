@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice3;
+package ytespring.egitim.demo.practice4;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

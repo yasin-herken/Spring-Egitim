@@ -1,4 +1,4 @@
-package ytespring.egitim.demo.practice3;
+package ytespring.egitim.demo.practice4.login.service;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import ytespring.egitim.demo.practice3.repository.UserRepository;
+import ytespring.egitim.demo.practice4.Authority;
+import ytespring.egitim.demo.practice4.Users;
+import ytespring.egitim.demo.practice4.login.repository.UserRepository;
 
 import java.util.Set;
 
